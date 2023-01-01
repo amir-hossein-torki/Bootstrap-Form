@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bootstrap Validation</title>
+    <title>bootstrap form</title>
     <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h3 class="text-center mt-5 mb-5">
-      Validation
+    <h3 class="text-center mt-5 mb-5 text-white bg-dark  m-auto">
+      log in
     </h3>
     <div class="container">
       <div class="width-main-box">
         <form class="row g-3 p-5 needs-validation" novalidate>
           <div class="col-md-6">
             <label for="validationCustom01" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email-validation"  placeholder="please Enter your email address" required>
+            <input type="email" class="form-control" id="email-validation"  placeholder="please Enter your email... " required>
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -35,7 +35,7 @@
           </div>
           <div class="col-md-6">
             <label for="validationCustom02" class="form-label">FullName</label>
-            <input type="text" class="form-control" id="validationCustom02" required>
+            <input type="text" class="form-control" id="validationCustom02" required placeholder="inter your name...">
             <div class="valid-feedback">
               Looks good!
             </div>
@@ -58,12 +58,12 @@
             </div>
           </div>
           <div class="col-md-6">
-            <label for="validationCustom04" class="form-label">State</label>
+            <label for="validationCustom04" class="form-label">location</label>
             <select class="form-select" id="validationCustom04" required>
               <option selected disabled value="">Choose...</option>
               <option>Tehran</option>
-              <option>Alborz</option>
-              <option>Khozestan</option>
+              <option>Shiraz</option>
+              <option>Aligoodarz</option>
             </select>
             <div class="invalid-feedback">
               Please select a state.
@@ -83,14 +83,14 @@
               </div>
             </div>
           </div>
-          <div class="mb-3">
-            <label for="validationTextarea" class="form-label">Textarea</label>
+          <div class="mb-3 mt-5">
+            <label for="validationTextarea" class="form-label">comment</label>
             <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
             <div class="invalid-feedback">
               Please enter a message in the textarea.
             </div>
-          <div class="col-12 mt-3">
-            <button class="btn btn-primary" id ="validation-form" type="submit">Submit form</button>
+          <div class="col-12 mt-5">
+            <button class="btn btn-primary m-auto col-4" id ="validation-form" type="submit">Submit</button>
           </div>
         </form>
       </div>
